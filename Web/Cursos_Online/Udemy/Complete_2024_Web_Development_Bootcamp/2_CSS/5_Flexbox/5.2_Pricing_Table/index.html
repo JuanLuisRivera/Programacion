@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Sono", sans-serif;
+      }
+
+      .pricing-container { /* Se genera un contenedor de tipo flex donde se agruparan los distintos elementos de la interfaz*/
+        display: flex; /* Se despliega la informacion del contenedor */
+        justify-content: center; /* Se centra el contenido horizontalmente */
+        align-items: center; /* Se centra el contenido verticalmente */
+        height: 100vh; /*Se establece el alto del contenedor correspondiente al 100% de la pantalla */
+        gap: 2rem; /* Se establece la separacion entre los elementos de manera relativa a la anchura de la pantalla*/
+      }
+
+      .pricing-plan{ /* Se establece el comportamiento de los elementos de la clase "pricing-plan" */
+        background-color: rgb(98, 196, 166); /* Se establece el color de fondo del elemento*/
+        max-width: 400px; /* Se establece el ancho maximo del elemento */
+        flex: 1; /* Se establece el comportamiento de los elementos de acuerdo a "grow " y "shrink" */
+        border-radius: 1rem; /* Se redondean los bordes del elemento */
+        padding: 2rem; /* Se establece el padding del elemento */
+        text-align: center; /* Se centra el texto del elemento */
+      }
+
+      .plan-title { /* Se establece el comportamiento de los elementos de la clase "plan-title" */
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .plan-price{ /* Se establece el comportamiento de los elementos de la clase "plan-price" */
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .plan-features { /* Se establece el comportamiento de los elementos de la clase "plan-features" */
+        list-style: none; /* Se elimina el estilo de la lista */
+        margin: 0;
+        padding: 0;
+      }
+
+      .plan-features li{ /* Se establece el comportamiento de los elementos de la lista "plan-features" */ 
+        margin-bottom: 1rem; /* Se establece el margen inferior de los elementos de la lista de manera que existe una separacion entre ellos */
+      }
+
+      .plan-button{ /* Se establece el comportamiento de los elementos de la clase "plan-button" */
+        background-color: rgb(228, 20, 141); /* Se establece el color de fondo del boton */
+        color: white; /* Se establece el color de letra del boton */
+        border: none; /* Se elimina el borde del boton */
+        border-radius: 0.5rem; /* Se redondea el borde del boton */
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      @media (max-width: 1250px) { /* Se establece el comportamiento de los elementos cuando la pantalla es menor de 1250px */
+        .pricing-container {
+          flex-direction: column; /* Se sobreescribe la orientacion de los elementos de la clase "pricing-container" */
+          height: 100%; /* Se establece el alto del contenedor de manera que se evita la perdida de la informacion */
+        }
+      }
+    </style>
+  </head>
+
+  <body> 
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>

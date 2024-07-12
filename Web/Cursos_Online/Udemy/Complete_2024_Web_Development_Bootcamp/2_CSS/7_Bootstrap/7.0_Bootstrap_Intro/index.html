@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+  <!-- Debido a que solamente ocupamos Bootstrap para CSS, podemos referenciarlo a traves del siguiente link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Sobreescribimos el comportamiento de la clase flex-container para poderle dar el comportamiento deseado -->
+  <style>
+    .flex-container{
+      display: flex; /* Establecemos el despliegue de la informacion a tipo flex */
+      justify-content: center; /* Centramos los elementos de manera horizontal */
+      align-items: center; /* Centramos los elementos de manera vertical */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <!-- Agregamos el template que podemos conseguir en la pagina de bootstrap para dar estilo de tarjeta -->
+    <div class="card" style="width: 18rem;"> 
+      <img src="./flower.jpg" class="card-img-top" alt="flower"> <!-- Se establce la imagen a utilizar en la tarjeta-->
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5> <!-- Se da titulo a la tarjeta-->
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <!-- Se despliega el texto dentro de la tarjeta-->
+        <a href="#" class="btn btn-primary">Go somewhere</a> <!-- Se establece el hipervinculo a traves de un boton en estilo html-->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+--Al aplicar la funcion ":t" sobre la funcion de igualdad "(==)" se obtiene "(==) :: (Eq a) => a -> a -> Bool"
+--Donde el operador "=>" es una restriccion de clase que implica que la funcion unicamente se puede utilizar para elementos
+--Que pertenecen a la clase especifica, en este caso la clase Eq.
+--Algunas clases de tipos son:
+-- Clase "Ord": se implementan las funciones relacionadas con el orden: "<", ">", ">=" y "<=".
+-- Clase "Eq": se implementan las funciones de igualdad: "==" y "/=".
+-- Clase "Show": implementa las funciones que muestran 
+-- Clase "Read": implementa la funcion que permite leer una cadena y regresa el tipo de dato del objeto.
+-- Clase "Enum": implementa funciones donde los elementos pueden enumerarse, como "succ" para el sucesor y "pred" para el antecesor.
+-- Clase "Bounded": implementa funciones donde los elementos estan acotados, como "minBound" y "maxBound".
+-- Clase "Num": implementa funciones donde los elementos se pueden tratar como numeros.
+-- Clase "Integral": los elementos de esta clase son unicamente los numeros enteros.
+-- Clase "Floating": los elementos de esta clase son unicamente numeros con coma flotante.
+

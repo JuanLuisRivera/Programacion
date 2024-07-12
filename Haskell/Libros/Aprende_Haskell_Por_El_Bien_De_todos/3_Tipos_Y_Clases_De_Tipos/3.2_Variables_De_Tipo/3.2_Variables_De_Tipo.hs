@@ -1,0 +1,2 @@
+ --Al analizar el tipo de dato que se obtiene por medio de la funcion ":t" sobre la funcion "head" en ghci, se obtiene como resultado 
+--"head :: [a] -> a", la "a" en este caso no representa a un tipo, sino un elemento generico que representa un tipo cualquiera

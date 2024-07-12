@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    .body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      height: 640px;
+      width: 665px;
+      display: grid;
+      background-color: #000000;
+      grid-template-columns: 150px 225px 50px 150px 50px;
+      grid-template-rows: 320px 140px 50px 100px 130px;
+      gap: 10px;
+    }
+
+    .item {
+      background-color: #F0F1EC;
+    }
+
+    .red {
+      background-color: #E72F24;
+      grid-row: span 2;
+    }
+
+    .blue {
+      background-color: #004592;
+    }
+
+    .green {
+      background-color: #6AB04C;
+      grid-row: span 2;
+    }
+
+    .white {
+      grid-column: span 1;
+    }
+
+    .white2{
+      grid-column: span 2;
+    }
+
+    .white3{
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .purple {
+      background-color: #8E44AD;
+      grid-row: span 3;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class ="item red"></div>
+    <div class="item blue"></div>
+    <div class="item white"></div>
+    <div class="item white2"></div>
+    <div class="item white"></div>
+    <div class="item white"></div>
+    <div class="item purple"></div>
+    <div class="item white3"></div>
+    <div class="item green"></div>
+    <div class="item white"></div>
+    <div class="item black"></div>
+  </div>
+</body>
+
+</html>

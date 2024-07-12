@@ -1,0 +1,66 @@
+/*Establece el comportamiento usual de los elementos en CSS cuando la pantalla es mayor de 600px */
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+.tile-image { /*Se especifica el comportamiento de la clase "tile-image", la cual hace referencia a las diversas imagenes en el documento */
+  height: 200px; /*Se establece el alto de la imagen */
+  float: left; /*Se mueven la imagenes a la izquierda */
+  margin-right: 25px; /*Se establece el margen derecho entre las imagenes y los textos */
+}
+
+.card {
+  width: 35%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+@media (max-width: 600px) {  /*Se establece el comportamiento de los elementos cuando la pantalla es menor de 600px */
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card { /*Se modifica el comportamiento de la clase "card" cuando las dimensiones de la pantalla son menores de 600px */
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img { /*Se modifica el comportamieno de las imagenes de la clase "card"*/
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}
